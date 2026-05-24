@@ -1,16 +1,56 @@
-# Jeyowbie
-Job Tracker
+# Jeyowbie 🎯
 
+A full-stack job application tracker built to manage your job search efficiently.
 
-//todo
+## Tech Stack
 
+**Backend:** Java 25 · Spring Boot 3.5 · Spring Security · Flyway · PostgreSQL  
+**Frontend:** React · TypeScript · Vite · Tailwind CSS  
+**DevOps:** Docker · GitHub Actions
 
-## License & Usage
+## Getting Started
 
-This project is proprietary and protected by copyright.
+### Prerequisites
+- Docker
+- Java 21+
+- Node.js 20+
 
-You may view this repository for inspiration only.
+### Run locally
 
-Copying, modifying, redistributing, reproducing,
-or using this code in personal or commercial projects
-is strictly prohibited without permission.
+1. Clone the repository
+```bash
+   git clone https://github.com/aelk-dev/Jeyowbie.git
+   cd Jeyowbie
+```
+
+2. Create your environment file
+```bash
+   cp .env.example .env
+```
+
+3. Start the database
+```bash
+   docker compose up -d
+```
+
+4. Start the backend
+```bash
+   cd backend
+   ./mvnw spring-boot:run
+```
+
+5. Start the frontend
+```bash
+   cd frontend
+   npm install
+   npm run dev
+```
+
+## Status
+🚧 In active development
+
+## License
+
+Copyright (c) 2026 Aya El Hakkouni — All rights reserved.  
+This project is proprietary. Viewing and running locally for evaluation purposes is permitted.  
+Any other use requires explicit written permission from the author.
