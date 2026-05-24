@@ -15,7 +15,15 @@ A full-stack job application tracker built to manage your job search efficiently
 - Java 21+
 - Node.js 20+
 
-### Run locally
+### Quick start (development)
+
+```bash
+./dev.sh
+```
+
+This script will automatically load environment variables, start the PostgreSQL database via Docker, and launch the Spring Boot backend.
+
+### Run manually
 
 1. Clone the repository
 ```bash
@@ -28,18 +36,7 @@ A full-stack job application tracker built to manage your job search efficiently
    cp .env.example .env
 ```
 
-3. Start the database
-```bash
-   docker compose up -d
-```
-
-4. Start the backend
-```bash
-   cd backend
-   ./mvnw spring-boot:run
-```
-
-5. Start the frontend
+3. Start the frontend
 ```bash
    cd frontend
    npm install
@@ -47,6 +44,7 @@ A full-stack job application tracker built to manage your job search efficiently
 ```
 
 ## Status
+
 🚧 In active development
 
 ## License
